@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center mb-4">Edit Profile</h2>
+<form method="POST" enctype="multipart/form-data">
+  <div class="mb-3"><label>Name</label><input type="text" name="name" class="form-control" value="{{ driver.name }}"></div>
+  <div class="mb-3"><label>Age</label><input type="number" name="age" class="form-control" value="{{ driver.age }}"></div>
+  <div class="mb-3"><label>Weight</label><input type="number" name="weight" class="form-control" value="{{ driver.weight }}"></div>
+  <div class="mb-3"><label>Medical Conditions</label><input type="text" name="medical_conditions" class="form-control" value="{{ driver.medical_conditions }}"></div>
+  <div class="mb-3"><label>Normal Heart Rate Range</label><input type="text" name="heart_rate_range" class="form-control" value="{{ driver.heart_rate_range }}"></div>
+  <div class="mb-3"><label>Normal SpO2</label><input type="text" name="spo2" class="form-control" value="{{ driver.spo2 }}"></div>
+  <div class="mb-3"><label>Emergency Contact</label><input type="text" name="emergency_contact" class="form-control" value="{{ driver.emergency_contact }}"></div>
+  <div class="mb-3"><label>Medications</label><input type="text" name="medications" class="form-control" value="{{ driver.medications }}"></div>
+  <div class="mb-3"><label>Blood Glucose</label><input type="text" name="blood_glucose" class="form-control" value="{{ driver.blood_glucose }}"></div>
+  <div class="mb-3"><label>Blood Group</label><input type="text" name="blood_group" class="form-control" value="{{ driver.blood_group }}"></div>
+  <div class="mb-3"><label>License Number</label><input type="text" name="license_number" class="form-control" value="{{ driver.license_number }}"></div>
+  <div class="mb-3"><label>Upload Photo</label><input type="file" name="photo" class="form-control"></div>
+  <button type="submit" class="btn btn-success w-100">Save Changes</button>
+</form>
+<div class="text-center mt-3">
+  <a href="{{ url_for('profile') }}" class="btn btn-secondary">Cancel</a>
+</div>
+{% endblock %}

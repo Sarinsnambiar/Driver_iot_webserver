@@ -1,0 +1,36 @@
+{
+  "drivers": [
+    {
+      "username": "Sarins",
+      "password": "9633757536",
+      "name": "SARIN S NAMBIAR",
+      "age": "22",
+      "weight": "49",
+      "medical_conditions": "N/A",
+      "heart_rate_range": "65-120",
+      "spo2": "93%",
+      "emergency_contact": "8281018063",
+      "medications": "N/A",
+      "blood_glucose": "110",
+      "blood_group": "O-ve",
+      "license_number": "DL 34687256926592",
+      "photo": "static/uploads/WhatsApp_Image_2025-09-23_at_11.07.34_AM.jpeg"
+    },
+    {
+      "username": "Sanjay m k",
+      "password": "6238175353",
+      "name": "Sanjay M K",
+      "age": "23",
+      "weight": "38",
+      "medical_conditions": "No",
+      "heart_rate_range": "70",
+      "spo2": "1",
+      "emergency_contact": "88",
+      "medications": "99",
+      "blood_glucose": "120",
+      "blood_group": "A+",
+      "license_number": "8",
+      "photo": "static/uploads/IMG-20250802-WA0011.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center mb-4">Driver Profile</h2>
+<div class="text-center mb-3">
+  {% if driver.photo %}
+    <img src="{{ url_for('static', filename='uploads/' + driver.photo.split('/')[-1]) }}" 
+         alt="Driver Photo" class="img-thumbnail" width="200">
+  {% else %}
+    <p>No photo uploaded</p>
+  {% endif %}
+</div>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Name:</strong> {{ driver.name }}</li>
+  <li class="list-group-item"><strong>Age:</strong> {{ driver.age }}</li>
+  <li class="list-group-item"><strong>Weight:</strong> {{ driver.weight }}</li>
+  <li class="list-group-item"><strong>Medical Conditions:</strong> {{ driver.medical_conditions }}</li>
+  <li class="list-group-item"><strong>Heart Rate Range:</strong> {{ driver.heart_rate_range }}</li>
+  <li class="list-group-item"><strong>SpO2:</strong> {{ driver.spo2 }}</li>
+  <li class="list-group-item"><strong>Emergency Contact:</strong> {{ driver.emergency_contact }}</li>
+  <li class="list-group-item"><strong>Medications:</strong> {{ driver.medications }}</li>
+  <li class="list-group-item"><strong>Blood Glucose:</strong> {{ driver.blood_glucose }}</li>
+  <li class="list-group-item"><strong>Blood Group:</strong> {{ driver.blood_group }}</li>
+  <li class="list-group-item"><strong>License Number:</strong> {{ driver.license_number }}</li>
+</ul>
+<div class="text-center mt-3">
+  <a href="{{ url_for('edit_profile') }}" class="btn btn-warning">Edit Profile</a>
+  <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+</div>
+{% endblock %}

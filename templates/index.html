@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Records</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Health Records</h1>
+
+    <!-- Form to add new record -->
+    <h2>Add New Record</h2>
+    <form method="POST">
+        Name: <input type="text" name="name" required><br>
+        Age: <input type="number" name="age"><br>
+        Weight: <input type="text" name="weight"><br>
+        Medical Conditions: <input type="text" name="medical_conditions"><br>
+        Normal HR Range: <input type="text" name="normal_hr_range"><br>
+        Normal SpO₂: <input type="text" name="normal_spo2"><br>
+        Emergency Contact: <input type="text" name="emergency_contact"><br>
+        Medications: <input type="text" name="medications"><br>
+        Blood Glucose Range: <input type="text" name="blood_glucose_range"><br>
+        <button type="submit">Save</button>
+    </form>
+
+    <!-- Display existing records -->
+    <h2>Existing Records</h2>
+    <ul>
+        {% for item in data %}
+        <li>
+            {{ item.name }} | Age: {{ item.age }} | Weight: {{ item.weight }} |
+            HR: {{ item.normal_hr_range }} | SpO₂: {{ item.normal_spo2 }} |
+            Emergency: {{ item.emergency_contact }} | Medications: {{ item.medications }} |
+            Glucose: {{ item.blood_glucose_range }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

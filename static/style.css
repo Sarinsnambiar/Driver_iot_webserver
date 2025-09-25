@@ -1,0 +1,65 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    font-size: 14px; /* smaller font size */
+    text-align: center; /* center all text */
+}
+
+/* Headings */
+h1, h2 {
+    color: #004080; /* Dark blue */
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: left; /* keep labels aligned left inside form */
+}
+
+/* Form inputs and buttons */
+form input, form button {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Submit button styling */
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Records list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* center all entries */
+}
+
+ul li {
+    background-color: #e6f2ff; /* light blue for entries */
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%; /* make entries uniform width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

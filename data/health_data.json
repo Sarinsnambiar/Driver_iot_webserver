@@ -1,0 +1,9 @@
+[
+    {
+        "name": "rashid",
+        "pulse_min": 50,
+        "pulse_max": 110,
+        "stress": 5,
+        "fatigue": 6
+    }
+]
